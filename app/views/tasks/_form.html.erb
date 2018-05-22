@@ -1,0 +1,15 @@
+<%= form_for @task, class: 'form-inline' do |f| %>
+  <%= f.label :title, "Enter a title" %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :description, "Enter a description" %>
+  <%= f.text_field :description %>
+
+  <%= f.label :deadline, "Enter a deadline" %>
+  <%= f.text_field :deadline %>
+
+  <%= f.label :priority, "Enter a priority" %>
+  <%= f.text_field :priority %>
+
+  <%= f.submit %>
+<% end %>
